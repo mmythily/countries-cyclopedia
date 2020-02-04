@@ -1,24 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
+import Country from './Country';
+
 import './App.css';
 
 function App() {
+  // const [countries, setCountries] = useState([]);
+  // const [country, setCountry] = useState({});
+
+  // Get all countries
+  const fetchCountries = () => {
+    axios
+      .get("https://restcountries.eu/rest/v2/all")
+      .then(res => console.log(res.data))
+      .catch(err => console.log(err));
+  };
+
+  
+
+  // useEffect(() => {
+  //   axios.get(`https://restcountries.eu/rest/v2/all`)
+  //     .then(res => console.log(res.data))
+  //     .catch(err => console.log(err));
+  // })
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        Where in the World?
+        Dark Mode
+      </nav>
+      <form>
+          <input 
+            type='text' 
+            name='country' 
+            placeholder='Search for a country...' />
+          <select>
+            <option disabled>Filter by Region</option>
+            <option value="all">All</option>
+            <option value="africa">Africa</option>
+            <option value="americas">Americas</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+          </select>
+        </form>
+        <Country />
+
     </div>
   );
 }
