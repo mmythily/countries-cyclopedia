@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function SearchFields ({search, handleChange}) {
-
   return(
     <form>
       <input 
