@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SearchFields ({search, handleChange}) {
+export default function SearchFields ({search, region, handleChange}) {
   return(
     <form>
       <input 
@@ -8,7 +8,11 @@ export default function SearchFields ({search, handleChange}) {
         name='country' 
         placeholder='Search for a country...'
         onChange={handleChange} />
-      <select>
+      <select
+        name='region'
+        value={region}
+        onChange={handleChange}
+        >
         <option disabled>Filter by Region</option>
         <option value="all">All</option>
         <option value="africa">Africa</option>

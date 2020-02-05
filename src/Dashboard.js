@@ -6,19 +6,36 @@ import './App.css';
 
 export default function Dashboard() {
   const [search, setSearch] = useState('')
+  const [region, setRegion] = useState('all')
   const [countries, setCountries] = useState([])
+  
 
   function handleChange (event) {
-    setSearch(event.target.value)
-    console.log(search)
+    console.log(search, region)
+    const {name, value} = event.target
+    if (name==='country'){
+      setSearch(value)
+    } else if (name==='region') {
+      setRegion(value)
+    }
+    
   }
 
   useEffect (() => {
-    const fetchCountries = async () => {
-      const response = await axios.get('https://restcountries.eu/rest/v2/all')
-      setCountries(response.data)
+    if (region === 'all') {
+      const fetchCountries = async () => {
+        const responseAll = await axios.get('https://restcountries.eu/rest/v2/all')
+        setCountries(responseAll.data)
+      }
+      fetchCountries()
+    } else {
+      const fetchByRegion = async () => {
+        const responseRegion = await axios.get(`https://restcountries.eu/rest/v2/region/${region}`)
+        setCountries(responseRegion.data)
+      }
+      fetchByRegion()
     }
-    fetchCountries();
+    
   }, [countries])
 
   const filteredCountries = countries.filter(country => {
