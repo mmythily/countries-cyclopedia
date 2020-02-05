@@ -2,9 +2,8 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import CountryCard from './CountryCard';
 
-function CountryList (){
+export default function CountryList (){
   const [countries, setCountries] = useState([])
-  
   useEffect (() => {
     const fetchCountries = async () => {
       const response = await axios.get('https://restcountries.eu/rest/v2/all')
@@ -12,15 +11,13 @@ function CountryList (){
     }
     fetchCountries();
   }, [countries])
-
   return (
-    <div>
+    <main className='countries-container'>
       {countries.map(country => (
         <span key={country.alpha3Code}>
           <CountryCard country={country} />
         </span>
       ))}
-    </div>
+    </main>
   )
 }
-export default CountryList;

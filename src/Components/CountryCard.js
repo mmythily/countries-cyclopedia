@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CountryCard (props) {
+export default function CountryCard (props) {
   const { flag, name, population, region, capital } = props.country;
 
   return (
@@ -11,12 +11,10 @@ function CountryCard (props) {
         src={flag} />
       <article className='country-article'>
         <h2> {name} </h2>
-        <h4> Population: {population}</h4>
-        <h4> Capital: {capital}</h4>
-        <h4> Region: {region}</h4>
+        <p><strong> Population:</strong> {population}</p>
+        <p><strong> Capital:</strong> {capital}</p>
+        <p><strong> Region:</strong> {region}</p>
       </article>
     </div>
   )
 }
-
-export default CountryCard;
