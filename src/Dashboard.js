@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Switch, Route, Link  } from 'react-router-dom';
 import Nav from './Components/Nav';
 import SearchFields from './Components/SearchFields';
 import CountryCard from './Components/CountryCard';
+import CountryPage from './Components/CountryPage';
 import axios from 'axios';
 import './App.css';
 
@@ -10,6 +11,7 @@ export default function Dashboard() {
   const [search, setSearch] = useState('')
   const [region, setRegion] = useState('all')
   const [countries, setCountries] = useState([])
+  const [country, setCountry] = useState('can')
   
   function handleChange (event) {
     console.log(search, region, countries.length)
@@ -51,13 +53,22 @@ export default function Dashboard() {
   return (
     <div>
       <Nav />
-      <SearchFields handleChange={handleChange}/>
-      {filteredCountries.length > 0 
-        ?`Showing ${filteredCountries.length} countries...`
-        : 'Loading ...'}
-      <main className='countries-container'>
-        {filteredCountries}
-      </main>
+      <Switch>
+        <Route exact path='/'>
+          <SearchFields handleChange={handleChange}/>
+          {filteredCountries.length > 0 
+            ?`Showing ${filteredCountries.length} countries...`
+            : 'Loading ...'}
+          <main className='countries-container'>
+            {filteredCountries}
+          </main>
+        </Route>
+        <Route path={`/${country}`}>
+          <Link to={`/${country}`}>
+            <CountryPage country={country}/>
+          </Link>
+        </Route>
+      </Switch>
     </div>
   )
 }
