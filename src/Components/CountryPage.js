@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function CountryPage (props) {
-  const { flag, name, population, region, capital } = props.country;
+  const { flag, name, population, region, capital } = props.countryP;
 
   return(
     <div className='country-card'>

@@ -2,7 +2,7 @@ import React from 'react';
 import './CountryCard.css'
 
 export default function CountryCard (props) {
-  const { flag, name, population, region, capital } = props.country;
+  const { flag, name, population, area, region, subregion, capital } = props.country;
 
   function formatCommas(num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
@@ -17,8 +17,11 @@ export default function CountryCard (props) {
       <article className='country-article'>
         <h3> {name} </h3>
         <p><strong> Population:</strong> {formatCommas(population)}</p>
+        <p><strong> Area:</strong> {area}</p>
+        <p><strong> Density:</strong> {(population/area).toFixed(2)}</p>
         <p><strong> Region:</strong> {region}</p>
-        <p><strong> Capital:</strong> {capital}</p>
+        <p><strong> Subregion:</strong> {subregion?subregion:'-'}</p>
+        <p><strong> Capital:</strong> {capital?capital:'-'}</p>
       </article>
     </div>
   )

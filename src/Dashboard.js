@@ -11,7 +11,7 @@ export default function Dashboard() {
   const [search, setSearch] = useState('')
   const [region, setRegion] = useState('all')
   const [countries, setCountries] = useState([])
-  const [country, setCountry] = useState('can')
+  const [countryP, setCountryP] = useState('can')
   
   function handleChange (event) {
     console.log(search, region, countries.length)
@@ -63,11 +63,7 @@ export default function Dashboard() {
             {filteredCountries}
           </main>
         </Route>
-        <Route path={`/${country}`}>
-          <Link to={`/${country}`}>
-            <CountryPage country={country}/>
-          </Link>
-        </Route>
+        <Route path='/:alpha3Code' component={CountryPage} />
       </Switch>
     </div>
   )
