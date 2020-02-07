@@ -1,17 +1,17 @@
 import React, {useState, useEffect} from 'react';
-import { Switch, Route, Link  } from 'react-router-dom';
+import { Switch, Route  } from 'react-router-dom';
 import Nav from './Components/Nav';
 import SearchFields from './Components/SearchFields';
 import CountryCard from './Components/CountryCard';
 import CountryPage from './Components/CountryPage';
 import axios from 'axios';
-import './App.css';
+import './App.scss';
 
 export default function Dashboard() {
   const [search, setSearch] = useState('')
   const [region, setRegion] = useState('all')
   const [countries, setCountries] = useState([])
-  const [countryP, setCountryP] = useState('can')
+  // const [countryP, setCountryP] = useState('can')
   
   function handleChange (event) {
     console.log(search, region, countries.length)
@@ -44,6 +44,7 @@ export default function Dashboard() {
     .filter(country => {
       return country.name.toLowerCase().includes(search.toLowerCase())
     })
+    .sort((a,b) =>b.population -a.population)
     .map(country => 
       <span key={country.alpha3Code}>
         <CountryCard country={country} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import './CountryCard.css'
+import './CountryCard.scss'
 
 export default function CountryCard (props) {
   const { flag, name, population, area, region, subregion, capital } = props.country;

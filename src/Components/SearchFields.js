@@ -1,5 +1,5 @@
 import React from 'react'
-import './SearchFields.css';
+import './SearchFields.scss';
 
 export default function SearchFields ({search, region, handleChange}) {
   return(
