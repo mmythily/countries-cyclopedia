@@ -3,8 +3,8 @@ import './SearchFields.scss';
 
 export default function SearchFields ({search, region, handleChange}) {
   return(
-    <div >
-      <form className='form'>
+    <div className='sticky-nav'>
+      <form >
         <input 
           name='country' 
           placeholder='Search for a country...'
