@@ -11,7 +11,6 @@ export default function Dashboard() {
   const [search, setSearch] = useState('')
   const [region, setRegion] = useState('all')
   const [countries, setCountries] = useState([])
-  // const [countryP, setCountryP] = useState('can')
   
   function handleChange (event) {
     console.log(search, region, countries.length)
