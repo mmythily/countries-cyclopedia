@@ -1,6 +1,6 @@
 # Worldpedia 
 
-## Overview: A web app that 
+## Overview: A web app that pulls demographic information about countries across the world
 
 
 ## Getting Started
