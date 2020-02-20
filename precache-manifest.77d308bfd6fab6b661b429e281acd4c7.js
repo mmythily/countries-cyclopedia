@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7d3989bc664541213f845806c7e1a252",
+    "revision": "db1897aa52c21a79eba22ca414dcdf35",
     "url": "/worldpedia/index.html"
   },
   {
-    "revision": "40a5387412ba9584ad49",
+    "revision": "0b9d904a857680e445e4",
     "url": "/worldpedia/static/css/main.297b06f5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/worldpedia/static/js/2.c51cbace.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "40a5387412ba9584ad49",
-    "url": "/worldpedia/static/js/main.f54a75a3.chunk.js"
+    "revision": "0b9d904a857680e445e4",
+    "url": "/worldpedia/static/js/main.126faf15.chunk.js"
   },
   {
     "revision": "e6e9ed6c8d4b367b34e1",

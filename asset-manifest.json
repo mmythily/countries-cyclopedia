@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/worldpedia/static/css/main.297b06f5.chunk.css",
-    "main.js": "/worldpedia/static/js/main.f54a75a3.chunk.js",
-    "main.js.map": "/worldpedia/static/js/main.f54a75a3.chunk.js.map",
+    "main.js": "/worldpedia/static/js/main.126faf15.chunk.js",
+    "main.js.map": "/worldpedia/static/js/main.126faf15.chunk.js.map",
     "runtime-main.js": "/worldpedia/static/js/runtime-main.e7d89ec8.js",
     "runtime-main.js.map": "/worldpedia/static/js/runtime-main.e7d89ec8.js.map",
     "static/js/2.c51cbace.chunk.js": "/worldpedia/static/js/2.c51cbace.chunk.js",
     "static/js/2.c51cbace.chunk.js.map": "/worldpedia/static/js/2.c51cbace.chunk.js.map",
     "index.html": "/worldpedia/index.html",
-    "precache-manifest.bd67aa1a483f6c9d19996fac90aee603.js": "/worldpedia/precache-manifest.bd67aa1a483f6c9d19996fac90aee603.js",
+    "precache-manifest.77d308bfd6fab6b661b429e281acd4c7.js": "/worldpedia/precache-manifest.77d308bfd6fab6b661b429e281acd4c7.js",
     "service-worker.js": "/worldpedia/service-worker.js",
     "static/css/main.297b06f5.chunk.css.map": "/worldpedia/static/css/main.297b06f5.chunk.css.map",
     "static/js/2.c51cbace.chunk.js.LICENSE.txt": "/worldpedia/static/js/2.c51cbace.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e7d89ec8.js",
     "static/js/2.c51cbace.chunk.js",
     "static/css/main.297b06f5.chunk.css",
-    "static/js/main.f54a75a3.chunk.js"
+    "static/js/main.126faf15.chunk.js"
   ]
 }
