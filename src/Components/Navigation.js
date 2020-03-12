@@ -1,7 +1,7 @@
 import React from 'react'
-import './Nav.scss'
+import './Navigation.scss'
 
-export default function Nav () {
+export default function Navigation () {
   return (
     <nav className='nav'>
       <h1>WORLDPEDIA</h1>

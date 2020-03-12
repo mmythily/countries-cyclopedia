@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Switch, Route  } from 'react-router-dom';
-import Nav from './Components/Nav';
-import SearchFields from './Components/SearchFields';
-import CountryCard from './Components/CountryCard';
-import CountryPage from './Components/CountryPage';
+import Navigation from './components/Navigation';
+import SearchFields from './components/SearchFields';
+import CountryCard from './components/CountryCard';
 import axios from 'axios';
 import './App.scss';
 
@@ -52,7 +51,7 @@ export default function Dashboard() {
   
   return (
     <div>
-      <Nav />
+      <Navigation />
       <Switch>
         <Route exact path='/'>
           <SearchFields handleChange={handleChange}/>
@@ -63,7 +62,7 @@ export default function Dashboard() {
             {filteredCountries}
           </main>
         </Route>
-        <Route path='/:alpha3Code' component={CountryPage} />
+        <Route path='/:alpha3Code' />
       </Switch>
     </div>
   )

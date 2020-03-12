@@ -18,3 +18,4 @@
 - React Router
 - SASS
 - Axios
+- Netlify Deployment
