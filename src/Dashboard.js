@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Switch, Route  } from 'react-router-dom';
-import Navigation from './components/Navigation';
+import Navigation from './components/Navigation.js';
 import SearchFields from './components/SearchFields';
 import CountryCard from './components/CountryCard';
 import axios from 'axios';
