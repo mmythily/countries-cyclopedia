@@ -62,7 +62,6 @@ export default function Dashboard() {
             {filteredCountries}
           </main>
         </Route>
-        <Route path='/:alpha3Code' />
       </Switch>
     </div>
   )
