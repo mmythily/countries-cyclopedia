@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/worldpedia/static/css/main.297b06f5.chunk.css",
-    "main.js": "/worldpedia/static/js/main.126faf15.chunk.js",
-    "main.js.map": "/worldpedia/static/js/main.126faf15.chunk.js.map",
+    "main.css": "/worldpedia/static/css/main.d629263e.chunk.css",
+    "main.js": "/worldpedia/static/js/main.32672614.chunk.js",
+    "main.js.map": "/worldpedia/static/js/main.32672614.chunk.js.map",
     "runtime-main.js": "/worldpedia/static/js/runtime-main.e7d89ec8.js",
     "runtime-main.js.map": "/worldpedia/static/js/runtime-main.e7d89ec8.js.map",
-    "static/js/2.c51cbace.chunk.js": "/worldpedia/static/js/2.c51cbace.chunk.js",
-    "static/js/2.c51cbace.chunk.js.map": "/worldpedia/static/js/2.c51cbace.chunk.js.map",
+    "static/js/2.5d8e2c39.chunk.js": "/worldpedia/static/js/2.5d8e2c39.chunk.js",
+    "static/js/2.5d8e2c39.chunk.js.map": "/worldpedia/static/js/2.5d8e2c39.chunk.js.map",
     "index.html": "/worldpedia/index.html",
-    "precache-manifest.77d308bfd6fab6b661b429e281acd4c7.js": "/worldpedia/precache-manifest.77d308bfd6fab6b661b429e281acd4c7.js",
+    "precache-manifest.3f4f1c70087a9ab2043b6d9f974a3e6f.js": "/worldpedia/precache-manifest.3f4f1c70087a9ab2043b6d9f974a3e6f.js",
     "service-worker.js": "/worldpedia/service-worker.js",
-    "static/css/main.297b06f5.chunk.css.map": "/worldpedia/static/css/main.297b06f5.chunk.css.map",
-    "static/js/2.c51cbace.chunk.js.LICENSE.txt": "/worldpedia/static/js/2.c51cbace.chunk.js.LICENSE.txt"
+    "static/css/main.d629263e.chunk.css.map": "/worldpedia/static/css/main.d629263e.chunk.css.map",
+    "static/js/2.5d8e2c39.chunk.js.LICENSE.txt": "/worldpedia/static/js/2.5d8e2c39.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e7d89ec8.js",
-    "static/js/2.c51cbace.chunk.js",
-    "static/css/main.297b06f5.chunk.css",
-    "static/js/main.126faf15.chunk.js"
+    "static/js/2.5d8e2c39.chunk.js",
+    "static/css/main.d629263e.chunk.css",
+    "static/js/main.32672614.chunk.js"
   ]
 }
