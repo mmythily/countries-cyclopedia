@@ -5,7 +5,7 @@ export default function Navigation () {
   return (
     <nav className='nav'>
       <h1>WORLDPEDIA</h1>
-      {/* <span><button>Dark Mode</button></span> */}
+      
     </nav>
   )
 }
