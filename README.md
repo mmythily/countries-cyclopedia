@@ -18,4 +18,5 @@
 - React Router
 - SASS
 - Axios
-- Netlify Deployment
+
+## This project is deployed on Heroku [![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat)]
