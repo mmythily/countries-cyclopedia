@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Switch, Route  } from 'react-router-dom';
-import Navigation from './component/navigat';
-import SearchFields from './component/search';
-import CountryCard from './component/countryC';
+import Navigation from './components/navigat';
+import SearchFields from './components/search';
+import CountryCard from './components/countryC';
 import axios from 'axios';
 import './App.scss';
 
