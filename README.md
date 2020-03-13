@@ -19,4 +19,4 @@
 - SASS
 - Axios
 
-## This project is deployed on Heroku [![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat)]
+![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat)
