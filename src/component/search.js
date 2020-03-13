@@ -1,7 +1,7 @@
 import React from 'react'
-import './SearchFields.scss';
+import './search.scss';
 
-export default function SearchFields ({search, region, handleChange}) {
+export default function search ({search, region, handleChange}) {
   return(
     <div className='sticky-nav'>
       <form>

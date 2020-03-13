@@ -1,7 +1,7 @@
 import React from 'react';
-import './CountryCard.scss'
+import './countryC.scss'
 
-export default function CountryCard (props) {
+export default function countryC (props) {
   const { flag, name, population, area, region, subregion, capital } = props.country;
 
   function formatCommas(num) {
