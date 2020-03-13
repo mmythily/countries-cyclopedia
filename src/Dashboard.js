@@ -24,13 +24,13 @@ export default function Dashboard() {
   useEffect (() => {
     if (region === 'all') {
       const fetchAllCountries = async () => {
-        const response = await axios.get('http://restcountries.eu/rest/v2/all')
+        const response = await axios.get('https://restcountries.eu/rest/v2/all')
         setCountries(response.data)
       }
       fetchAllCountries()
     } else {
       const fetchByRegion = async () => {
-        const response = await axios.get(`http://restcountries.eu/rest/v2/region/${region}`)
+        const response = await axios.get(`https://restcountries.eu/rest/v2/region/${region}`)
         setCountries(response.data)
       }
       fetchByRegion()
