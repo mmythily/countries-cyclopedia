@@ -12,7 +12,6 @@ export default function Dashboard() {
   const [countries, setCountries] = useState([])
   
   function handleChange (event) {
-    console.log(search, region, countries.length)
     const {name, value} = event.target
     if (name==='country'){
       setSearch(value)
